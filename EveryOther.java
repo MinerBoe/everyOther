@@ -5,12 +5,17 @@ class EveryOther {
 
 	public static void main(String[] args) {
 		
-		//everyOther(3, 15, 3);
+		//everyOther(3, 15);
 		System.out.println(test(everyOther(3, 15, 2), new int[]{3, 5, 7, 9, 11, 13}));
 
 	}
 
 	// 3 5 7 9 11 13
+
+	public static int[] everyOther(int start, int end) {
+
+		return everyOther(start, end, 2);
+	}
 
 	public static int[] everyOther(int start, int end, int interval) {
 			int l = (((end - start) + 1) / interval);
