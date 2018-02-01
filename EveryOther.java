@@ -42,15 +42,7 @@ class EveryOther {
 
 		int total = 0;
 
-		if (given.length != expected.length) {
-
-			return false;
-
-		}
-
-		// if (total == given.length) {
-		// 	return true;
-		// }
+		if (given.length != expected.length) return false;
 			
 		for (int i = 0; i < given.length; i++) {
 
